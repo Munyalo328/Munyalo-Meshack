@@ -3,58 +3,133 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 body {
 	background-color: #ffffff;
 	width: 100%;
-	font-family: calibri light;
+	font-family: sans-serif;
+	font-weight: 300;
 }
 
-a {
-	text-decoration: none;
-}
-
-/*a:hover {
-	background-color: #008080;
-	color: #ffffff;
-}*/
-
-/* Navbar */
-.m3-top {
-	margin: 0;
+.navbar {
+  	margin: 0;
 	padding: 0;
 	background-color: #ff6347;
 	width: 100%;
 	position: fixed;
 }
 
-.m3-bar {
-	width: 100%;
-	padding-top: 16px;
-	padding-bottom: 16px;
-	font-size: 20px;
-	align-content: left;
+.nav-menu {
+  	list-style: none;
+  	display: flex;
+  	gap: 20px;
+
 }
 
-.m3-bar-item {
-	padding: 16px;
-	color: #ffffff;
+.nav-menu li {
+  	position: relative;
 }
 
-.m3-bar-item:hover {
+.nav-menu a {
+  	color: white;
+  	text-decoration: none;
+  	padding: 16px;
+  	font-size: 20px;
+  	display: block;
+	align-items: center;
+	height: 100%;
+}
+
+.menu-item:hover {
 	background-color: white;
-	color: #000000;
+	color: black;
 }
 
-.m3-white {
-	background-color: #ffffff;
-	padding: 16px;
-	padding-left: 30px;
-	color: #000000;
+
+/* Dropdown menu */
+.dropdown-menu {
+  	position: absolute;
+  	top: 100%;
+  	left: 0;
+  	background: #ff6347;
+  	list-style: none;
+  	min-width: 180px;
+  	display: none;
+  	padding: 0;
 }
 
-.m3-white:hover {
-	background-color: #C0C0C0;
+/*Show first dropdown*/
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+/*Parentfor second dropdown*/
+.has-submenu {
+	position: relative;
+}
+
+/*Second dropdown*/
+.mini-dropdown-menu {
+  	position: absolute;
+  	top: 0;
+  	left: 100%; /*Makes it appear infront/right side*/
+  	background: #ff6347;
+  	list-style: none;
+  	min-width: 220px;
+  	display: none;
+  	padding: 0;
+}
+
+/* Second dropdown on hover */
+.has-submenu:hover .mini-dropdown-menu {
+  	display: block;
+}
+
+/* Hover styling */
+.dropdown-menu li a,
+.mini-dropdown-menu li a {
+  	padding: 12px 15px;
+  	display: block;
+	background: #E9967A;
+  	color: white;
+}
+
+.dropdown-menu li a:hover,
+.mini-dropdown-menu li a:hover {
+  	background: yellow;
+  	color: black;
+}
+
+.dropdown > a::after {
+	content: "";
+	display: inline-block;
+	margin-left: 8px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid white;
+	vertical-align: middle;
+	transition: transform 0.3s ease;
+}
+
+.dropdown:hover > a::after {
+	transform: rotate(180deg);
+	border-top-color: black;
+}
+
+.dropdown-menu li a {
+  	padding: 12px 15px;
+}
+
+/* Hover behavior */
+.dropdown:hover .dropdown-menu {
+ 	display: block;
+}
+
+/* Optional hover effect */
+.dropdown-menu li a:hover {
+  	background: white;
+  color: black;
 }
 
 .m3-bar-block  {
@@ -258,6 +333,7 @@ h2 {
   .col-sm-12 {width: 100%;}
 
  }
+
 
 
 
