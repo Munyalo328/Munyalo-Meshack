@@ -129,7 +129,7 @@ h2 {
 /*Dropdown*/
 .m3-dropdown-hover {
   position: relative;
-  display: inline-block;
+  display: none;
 }
 
 .m3-dropdown-content {
@@ -258,3 +258,4 @@ h2 {
   .col-sm-12 {width: 100%;}
 
  }
+
