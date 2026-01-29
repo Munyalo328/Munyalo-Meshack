@@ -9,58 +9,49 @@
 </head>
 <body>
 
-	<!-- navbar -->
-	<div class="m3-top">
+	<!-- NavBar -->
+	<nav class="navbar">
+  <ul class="nav-menu">
+    <li ><a class="menu-item" href="#">Home</a></li>
 
-		<!-- navbar on large screen -->
-		<div class="m3-bar m3-left-align m3-red">
-			<a href="#" class="m3-bar-item m3-button m3-padding-large m3-white">Home</a>
-			<!--<a href="#" class="m3-bar-item m3-button m3-hide-small m3-padding-large">Services</a>-->
+    <li class="dropdown">
+      <a class="menu-item" href="#">Services<i class "fa fa-caret-down"></i></a>
+      <ul class="dropdown-menu dropdown-item">
+        <li class="has-submenu">
+	  <a href="#">Data Analysis</a>
+		<ul class="mini-dropdown-menu">
+        		<li><a href="#">Data Analysis & Insights</a></li>
+        		<li><a href="#">Data Visualization & Reporting</a></li>
+        		<li><a href="#">Business Inteligence</a></li>
+			<li><a href="#">Data Management</a></li>
+      		</ul>
+	</li>
+        <li class="has-submenu">
+	  <a href="#">AI & Machine Learning</a>
+		<ul class="mini-dropdown-menu">
+        		<li><a href="#">Machine Learning Model Development</a></li>
+        		<li><a href="#">Artficial Intelligence Solutions</a></li>
+        		<li><a href="#">Deployment & Automation</a></li>
+      		</ul>
+		</li>
+      </ul>
+    </li>
 
-				 <!-- Services Dropdown -->
-		    <div class="m3-bar-item m3-dropdown-hover m3-hide-small">
-		      <button class="m3-button m3-padding-large">
-		        Services ▾
-		      </button>
-		      <div class="m3-dropdown-content m3-bar-block m3-card-4">
-		        <a href="#" class="m3-bar-item m3-button">Web Development</a>
-		        <a href="#" class="m3-bar-item m3-button">Machine Learning</a>
-		        <a href="#" class="m3-bar-item m3-button">Consulting</a>
-		      </div>
-		    </div>
-		
-		
-					
-					<!--<a href="#" class="m3-bar-item m3-button m3-hide-small m3-padding-large m3-hover-white">Projects</a>-->
-		
-						  <!-- Projects Dropdown -->
-		    <div class="m3-bar-item m3-dropdown-hover m3-hide-small">
-		      <button class="m3-button m3-padding-large">
-		        Projects ▾
-		      </button>
-		      <div class="m3-dropdown-content m3-bar-block m3-card-4">
-		        <a href="#" class="m3-bar-item m3-button">AI Projects</a>
-		        <a href="#" class="m3-bar-item m3-button">Web Apps</a>
-		        <a href="#" class="m3-bar-item m3-button">Open Source</a>
-		      </div>
-		    </div>
+    <li class="dropdown dropdown-item">
+      <a class="menu-item" href="#">Projects<i class "fa fa-caret-down"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Project One</a></li>
+        <li><a href="#">Project Two</a></li>
+        <li><a href="#">Project Three</a></li>
+      </ul>
+    </li>
 
+    <li><a class="menu-item" href="#">About</a></li>
+    <li><a class="menu-item" href="#">Contact</a></li>
+  </ul>
+</nav>
 
-
-			
-			<a href="#" class="m3-bar-item m3-button m3-hide-small m3-padding-large m3-hover-white">About</a>
-			<a href="#" class="m3-bar-item m3-button m3-hide-small m3-padding-large m3-hover-white">Contact</a>
-		</div>
-
-		 <!-- Navbar on small screens -->
-        <div id="navDemo" class="m3-bar-block m3-white m3-hide m3-hide-large m3-hide-medium m3-large">
-           <a href="#" class="m3-bar-item m3-button m3-padding-large">Services</a>
-           <a href="#" class="m3-bar-item m3-button m3-padding-large">Projects</a>
-           <a href="#" class="m3-bar-item m3-button m3-padding-large">About</a>
-           <a href="#" class="m3-bar-item m3-button m3-padding-large">Contact</a>
-        </div>  
-	</div>
-
+	
 	<!-- Name -->
 	<div class="m3-align-center m3-padding-top m3-padding-bottom">
 		<div class="m3-xlarge" >
@@ -130,6 +121,7 @@
 </body>
 
 </html>
+
 
 
 
