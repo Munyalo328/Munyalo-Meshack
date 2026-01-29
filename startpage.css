@@ -26,16 +26,17 @@ body {
 }
 
 .nav-menu li {
-  	position: relative;
+	height: 60px;
+	display: flex;
 }
 
 .nav-menu a {
   	color: white;
   	text-decoration: none;
-  	padding: 16px;
+  	padding: 0 20px;
   	font-size: 20px;
-  	display: block;
 	align-items: center;
+  	display: flex;
 	height: 100%;
 }
 
@@ -77,11 +78,6 @@ body {
   	min-width: 220px;
   	display: none;
   	padding: 0;
-}
-
-/* Second dropdown on hover */
-.has-submenu:hover .mini-dropdown-menu {
-  	display: block;
 }
 
 /* Hover styling */
@@ -130,10 +126,6 @@ body {
 .dropdown-menu li a:hover {
   	background: white;
   color: black;
-}
-
-.m3-bar-block  {
-	align-items: right;
 }
 
 .m3-align-center {
@@ -333,6 +325,7 @@ h2 {
   .col-sm-12 {width: 100%;}
 
  }
+
 
 
 
