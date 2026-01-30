@@ -30,8 +30,9 @@ a {
 }
 
 .nav-menu li {
-	height: 60px;
-	display: flex;
+	/*height: 60px;
+	display: flex;*/
+	position: relative;
 }
 
 .nav-menu a {
@@ -82,6 +83,11 @@ a {
   	min-width: 220px;
   	display: none;
   	padding: 0;
+}
+
+/* Second dropdown on hover */
+.has-submenu:hover .mini-dropdown-menu {
+  	display: block;
 }
 
 /* Hover styling */
@@ -329,6 +335,7 @@ h2 {
   .col-sm-12 {width: 100%;}
 
  }
+
 
 
 
