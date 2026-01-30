@@ -225,14 +225,14 @@ h2 {
   background-color: #f1f1f1;
 }
 
-/*.m3-column-two {
+.m3-column-two {
 	width: 25%;
 	padding-right: 180px;
 	padding-left: 70px;
 	color: #ff0000; 
 	font-size: 180px;
 }
-*/
+
 .m3-color-grey {
 	color: #808080;
 	padding-top: 30px;
@@ -335,6 +335,7 @@ h2 {
   .col-sm-12 {width: 100%;}
 
  }
+
 
 
 
