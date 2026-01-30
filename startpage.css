@@ -30,9 +30,9 @@ a {
 }
 
 .nav-menu li {
-	/*height: 60px;
-	display: flex;*/
-	position: relative;
+	height: 60px;
+	display: flex;
+	/*position: relative;*/
 }
 
 .nav-menu a {
@@ -335,6 +335,7 @@ h2 {
   .col-sm-12 {width: 100%;}
 
  }
+
 
 
 
